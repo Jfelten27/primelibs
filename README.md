@@ -72,7 +72,39 @@ This is a set of classes derived fromm the `gui.py` framework which provide file
 FileBrowser(ext='') -> FileBrowser
 ```
 
+##### Parameters:
+- `ext: str` -- Default extension used for filtering files, mostly used for open and save dialog boxes
+
 ##### Properties:
 
 
 ##### 
+
+### gui.py
+
+`gui.py` is an object-oriented GUI framework designed to be as modular as possible. As such, an interface with this library may be best thought of as a hierarchy of objects.
+
+#### Frame
+
+Frame objects serve as containers to hold other components, rather than standalone interactable objects themselves.
+
+##### Syntax:
+```python3
+Frame() -> Frame
+```
+
+##### Attributes:
+- `data: str` -- Base64 data to be converted to bytes format
+
+##### Methods:
+the input Base64 string decoded into a byte array
+
+##### Example:
+```python3
+import time
+import pointer
+
+my_frame = Frame()
+frame.setSize(320, 240)
+```
+Output: `'SGVsbG8sIHdvcmxkIQ=='`
